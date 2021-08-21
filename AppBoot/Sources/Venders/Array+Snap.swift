@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-extension Array where Element: UIView {
+public extension Array where Element: UIView {
     func flowLayout(hSpace: CGFloat = 0, vSpace: CGFloat = 0, width: CGFloat = 0, height:CGFloat = 0, columnCount: Int = 1, callback:((Element,Int)->Void)? = nil) {
         let row = (self.count - 1) / columnCount  + 1
         for index in 0 ..< count {
@@ -31,7 +31,7 @@ extension Array where Element: UIView {
                     make.bottom.equalToSuperview().offset(-vSpace)
                 }
             }
-        callback?(currentItem, index)
+            callback?(currentItem, index)
         }
         
     }

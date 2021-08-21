@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/skeyboy/AppBoot.git', :tag => '#{spec.version}' }
   spec.source_files = 'AppBoot/Sources/**/*.{h,m,swift}'
   spec.framework    = 'UIKit'
-  spec.dependency = 'SnapKit'
+  spec.dependency  'SnapKit'
 end

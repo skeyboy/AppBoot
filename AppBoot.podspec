@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'AppBoot'
-  spec.version      = '0.0.2'
+  spec.version      = '0.0.1'
   spec.license      = { :type => 'BSD' }
   spec.homepage     = 'https://github.com/skeyboy/AppBoot'
   spec.authors      = { 'skeyboy' => 'lylapp@163.com' }
